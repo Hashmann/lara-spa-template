@@ -10,6 +10,25 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
+    @if (Auth::check())
+      <script>
+        window.Laravel = {!!json_encode([
+                'isLoggin' => true,
+                'currentUser' => Auth::user(),
+                'currentUserRole' => Auth::user()->roles->pluck('name')->toArray(),
+                'permissions' => Auth::user()->getAllPermissions()->pluck('name')->toArray()
+            ])!!}
+      </script>
+    @else
+      <script>
+        window.Laravel = {!!json_encode([
+                'isLoggin' => false,
+                'currentUser' => '',
+                'currentUserRole' => '',
+                'permissions' => ''
+            ])!!}
+      </script>
+    @endif
     <div id="app">
         <main-app></main-app>
     </div>

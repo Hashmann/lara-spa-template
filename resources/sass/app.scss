@@ -1,8 +1,20 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 //@import 'bootstrap/scss/bootstrap';
+
+.v-theme--light {
+    //transition: all 1s ease;
+    transition: all 0.4s 0.2s ease;
+}
+.v-theme--dark {
+    //transition: all 1s ease;
+    transition: all 0.4s 0.2s ease;
+}
+A:visited {
+  color: transparent /* Цвет посещенной ссылки */
+}

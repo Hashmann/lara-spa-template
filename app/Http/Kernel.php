@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\Api\V1\LastActivityAt;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -42,6 +43,10 @@ class Kernel extends HttpKernel
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+          //INFO My middleware
+            \App\Http\Middleware\Api\V1\LastActivityAt::class,
+            \App\Http\Middleware\Api\V1\LogoutUser::class
+          //INFO END My middleware
         ],
     ];
 

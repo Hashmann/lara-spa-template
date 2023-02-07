@@ -1,0 +1,27 @@
+{
+  "main": {
+    "hello": "Hello"
+  },
+  "admin": {
+    "toolbar": {},
+    "drawer": {
+      "home": "Home",
+      "users": "Users",
+      "permissions": "Permissions"
+    },
+    "page": {
+      "users": {
+        "title": "Users",
+        "table": {
+          "avatar": "Avatar",
+          "name": "Name",
+          "surname": "Surname",
+          "role": "Role",
+          "status": "Status",
+          "actions": "Actions",
+          "search": "Search..."
+        }
+      }
+    }
+  }
+}

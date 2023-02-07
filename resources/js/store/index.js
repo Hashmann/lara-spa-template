@@ -1,10 +1,12 @@
 import Vuex from 'vuex'
-import auth from './modules/auth.js'
-import users from "./modules/users.js";
+import auth from './modules/auth/auth.js'
+import users from "./modules/admin/users/users.js";
+
 
 export default new Vuex.Store({
-    modules: {
-        auth,
-        users
-    }
+  // strict: false,
+  modules: {
+    auth,
+    users
+  },
 })

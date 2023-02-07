@@ -1,0 +1,27 @@
+{
+  "main": {
+    "hello": "Привет"
+  },
+  "admin": {
+    "toolbar": {},
+    "drawer": {
+      "home": "Главная",
+      "users": "Пользователи",
+      "permissions": "Разрешения"
+    },
+    "page": {
+      "users": {
+        "title": "Пользователи",
+        "table": {
+          "avatar": "Аватар",
+          "name": "Имя",
+          "surname": "Фамилия",
+          "role": "Роль",
+          "status": "Статус",
+          "actions": "Действия",
+          "search": "Искать..."
+        }
+      }
+    }
+  }
+}
